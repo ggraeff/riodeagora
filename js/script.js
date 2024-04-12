@@ -52,8 +52,8 @@ animate();
 
 
 $('.post-slider').slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToShow: 4,
+  sliderToScroll: 4,
   infinite: false,
   prevArrow: $('.post-slider-prev'),
   nextArrow: $('.post-slider-next'),
@@ -61,15 +61,15 @@ $('.post-slider').slick({
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 2
       }
     },
     {
@@ -81,7 +81,6 @@ $('.post-slider').slick({
     }
   ]
 });
-
 
 $('.video-slider').slick({
   slidesToShow: 2,

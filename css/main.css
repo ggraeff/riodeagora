@@ -475,10 +475,10 @@ section {
    }
 }
 
-/*.slick-slide {
+.slick-slide {
   margin: 0 4px;
 }
-*/
+
 .slick-list {
   margin: 0 -4px;
   overflow: initial;
