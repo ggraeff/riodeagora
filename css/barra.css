@@ -1,0 +1,183 @@
+.barra-globocom {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .barra-globocom {
+    display: block;
+  }
+}
+
+.barra-globocom .barra-conteudo:not(.row) {
+  max-width: 1336px;
+  padding: 0 12px;
+}
+
+.barra {
+  background-color: #C4170C;
+}
+
+.barra__main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #C4170C;
+}
+
+@media (min-width: 768px) {
+  .barra__main {
+    height: 74px;
+  }
+}
+.barra__sub {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 768px) {
+  .barra__sub {
+    height: 35px;
+  }
+}
+
+.barra__wrapper {
+  width: 100%;
+  max-width: 1360px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+.barra__logo {
+  display: inline-block;
+  padding-top: 6px;
+  vertical-align: middle;
+}
+
+.barra__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: -0.84px;
+}
+
+@media (min-width: 768px) {
+  .barra__title {
+    letter-spacing: -1.28px;
+    font-size: 32px;
+  }
+}
+.barra__subtitle {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .barra__subtitle {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+.barra__link {
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+.barra__link:hover {
+  color: #ffffff;
+  opacity: 0.75;
+}
+@keyframes barraSm {
+  from {
+    top: -52px;
+  }
+  to {
+    top: 35px;
+  }
+}
+@keyframes barraLg {
+  from {
+    top: -52px;
+  }
+  to {
+    top: 34px;
+  }
+}
+@keyframes globoSm {
+  from {
+    top: -87px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes globoLg {
+  from {
+    top: -96px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+/*
+.barra__logo svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .barra__logo svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+*/
+
+.barra__logo svg {
+  width: 66px;
+  height: 18px;
+}
+
+@media (min-width: 768px) {
+  .barra__logo svg {
+    width: 99px;
+    height: 31px;
+  }
+}
+
+@media (min-width: 768px) {
+  .barra__main.is-fixed {
+    position: fixed;
+    top: -96px;
+    width: 100%;
+    height: 52px;
+    z-index: 999;
+    animation: barraLg 0.3s forwards;
+  }
+
+  .barra-globocom.is-fixed {
+    position: fixed;
+    top: -96px;
+    animation: globoLg 0.3s forwards;
+    height: 39px;
+    margin-top: -5px;
+  }
+
+  body.padding-fix {
+    /* padding-top: 153px; */
+    padding-top: 118px;
+  }
+}
